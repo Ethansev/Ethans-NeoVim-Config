@@ -2,14 +2,14 @@ return {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
     dependencies = { "nvim-lua/plenary.nvim" },
-    config = function()
-        require("harpoon"):setup()
-    end,
+    -- config = function()
+    --     require("harpoon"):setup()
+    -- end,
     keys = {
         {
             "<leader>A",
             function()
-                require("harpoon"):list():append()
+                require("harpoon"):list():add()
             end,
             desc = "harpoon file",
         },
